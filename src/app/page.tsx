@@ -126,7 +126,7 @@ export default function Home() {
               I build intelligent AI systems.
             </motion.h1>
             <motion.p variants={fadeUp} className="max-w-2xl text-lg text-slate-400 leading-relaxed font-light">
-              I'm an AI engineer and data enthusiast currently pursuing my Integrated M.Tech in Artificial Intelligence. I specialize in building RAG pipelines, explainable ML models, and scalable data-driven solutions.
+              I'm an AI engineering student at VIT. I bridge the gap between raw data and real-world impact by building intelligent recommendation systems, predictive models, and data-driven dashboards.
             </motion.p>
             <motion.div variants={fadeUp} className="pt-8 flex items-center gap-6">
               <motion.a 
