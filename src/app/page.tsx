@@ -516,7 +516,7 @@ export default function Home() {
 
       </main>
 
-      </main>
+    
 
       <footer className="mt-32 border-t border-slate-900 py-10 text-center text-sm text-slate-500 font-mono relative z-10 bg-slate-950/50">
         <p className="hover:text-cyan-400 transition-colors cursor-pointer">Built with Next.js, Tailwind & Framer Motion</p>
