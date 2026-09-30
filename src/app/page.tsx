@@ -98,14 +98,15 @@ export default function Home() {
             <a href="#projects" className="hover:text-cyan-400 transition-colors">04. Work</a>
             <a href="#contact" className="hover:text-cyan-400 transition-colors">05. Contact</a>
           </div>
-          <motion.button 
-            whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-            className="px-4 py-2 rounded-lg border border-cyan-500/50 text-cyan-400 text-sm font-medium hover:bg-cyan-500/10 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(6,182,212,0.15)] hover:shadow-[0_0_25px_rgba(6,182,212,0.3)]"
-          >
-            <FileText className="w-4 h-4" /> Resume
-          </motion.button>
-        </div>
-      </motion.nav>
+          <motion.a
+  href="/Vedant_Deshmukh_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
+  className="px-4 py-2 rounded-lg border border-cyan-500/50 text-cyan-400 text-sm font-medium hover:bg-cyan-500/10 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(6,182,212,0.15)] hover:shadow-[0_0_25px_rgba(6,182,212,0.3)]"
+>
+  <FileText className="w-4 h-4" /> Resume
+</motion.a>
 
       <main className="max-w-6xl mx-auto px-6 pt-32 space-y-40 relative z-10">
         
