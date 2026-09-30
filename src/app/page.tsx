@@ -107,6 +107,8 @@ export default function Home() {
 >
   <FileText className="w-4 h-4" /> Resume
 </motion.a>
+</div>
+</motion.nav>
 
       <main className="max-w-6xl mx-auto px-6 pt-32 space-y-40 relative z-10">
         
