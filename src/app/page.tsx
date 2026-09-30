@@ -488,29 +488,33 @@ export default function Home() {
               </div>
             </motion.div>
 
-           {/* Contact Form */}
-<motion.form onSubmit={handleSubmit} variants={fadeUp} className="space-y-5 bg-slate-900/40 border border-slate-800 p-8 rounded-2xl backdrop-blur-sm relative overflow-hidden">
-  <div className="absolute top-0 right-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-emerald-500 opacity-50"></div>
+                      {/* Contact Form */}
+            <motion.form onSubmit={handleSubmit} variants={fadeUp} className="space-y-5 bg-slate-900/40 border border-slate-800 p-8 rounded-2xl backdrop-blur-sm relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-emerald-500 opacity-50"></div>
 
-  <div className="space-y-2">
-    <label className="text-sm font-mono text-cyan-400">01. Name</label>
-    <input type="text" name="name" required className="w-full bg-slate-950/50 border border-slate-800 rounded-xl px-5 py-4 text-slate-100 focus:outline-none focus:border-cyan-500 focus:bg-slate-900 transition-all shadow-inner" placeholder="John Doe" />
-  </div>
-  <div className="space-y-2">
-    <label className="text-sm font-mono text-cyan-400">02. Email</label>
-    <input type="email" name="email" required className="w-full bg-slate-950/50 border border-slate-800 rounded-xl px-5 py-4 text-slate-100 focus:outline-none focus:border-cyan-500 focus:bg-slate-900 transition-all shadow-inner" placeholder="john@example.com" />
-  </div>
-  <div className="space-y-2">
-    <label className="text-sm font-mono text-cyan-400">03. Message</label>
-    <textarea rows={4} name="message" required className="w-full bg-slate-950/50 border border-slate-800 rounded-xl px-5 py-4 text-slate-100 focus:outline-none focus:border-cyan-500 focus:bg-slate-900 transition-all resize-none shadow-inner" placeholder="Hello, I'd like to talk about..."></textarea>
-  </div>
-  <button type="submit" disabled={status === "sending"} className="w-full bg-cyan-500/10 border border-cyan-500/50 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-bold py-4 rounded-xl flex items-center justify-center gap-3 transition-all mt-6 shadow-[0_0_15px_rgba(6,182,212,0.15)] hover:shadow-[0_0_25px_rgba(6,182,212,0.4)] disabled:opacity-60">
-    <Send className="w-5 h-5" /> {status === "sending" ? "Sending..." : "Send Message"}
-  </button>
+              <div className="space-y-2">
+                <label className="text-sm font-mono text-cyan-400">01. Name</label>
+                <input type="text" name="name" required className="w-full bg-slate-950/50 border border-slate-800 rounded-xl px-5 py-4 text-slate-100 focus:outline-none focus:border-cyan-500 focus:bg-slate-900 transition-all shadow-inner" placeholder="John Doe" />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-mono text-cyan-400">02. Email</label>
+                <input type="email" name="email" required className="w-full bg-slate-950/50 border border-slate-800 rounded-xl px-5 py-4 text-slate-100 focus:outline-none focus:border-cyan-500 focus:bg-slate-900 transition-all shadow-inner" placeholder="john@example.com" />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-mono text-cyan-400">03. Message</label>
+                <textarea rows={4} name="message" required className="w-full bg-slate-950/50 border border-slate-800 rounded-xl px-5 py-4 text-slate-100 focus:outline-none focus:border-cyan-500 focus:bg-slate-900 transition-all resize-none shadow-inner" placeholder="Hello, I'd like to talk about..."></textarea>
+              </div>
+              <button type="submit" disabled={status === "sending"} className="w-full bg-cyan-500/10 border border-cyan-500/50 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 font-bold py-4 rounded-xl flex items-center justify-center gap-3 transition-all mt-6 shadow-[0_0_15px_rgba(6,182,212,0.15)] hover:shadow-[0_0_25px_rgba(6,182,212,0.4)] disabled:opacity-60">
+                <Send className="w-5 h-5" /> {status === "sending" ? "Sending..." : "Send Message"}
+              </button>
 
-  {status === "success" && <p className="text-emerald-400 text-sm text-center">Message sent! I'll get back to you soon.</p>}
-  {status === "error" && <p className="text-red-400 text-sm text-center">Something went wrong. Please try again.</p>}
-</motion.form>
+              {status === "success" && <p className="text-emerald-400 text-sm text-center">Message sent! I'll get back to you soon.</p>}
+              {status === "error" && <p className="text-red-400 text-sm text-center">Something went wrong. Please try again.</p>}
+            </motion.form>
+          </div>
+        </motion.section>
+
+      </main>
 
       </main>
 
